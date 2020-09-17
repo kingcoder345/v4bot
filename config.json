@@ -1,4 +1,8 @@
 {
-    "Token":"NzU2MTgxMDkzODYyMDgwNjIz.X2OGhQ.NyBXuU9ZqhBST1dBYNrz3vKgqSQ",
-    "prefix":"!"
+  "TOKEN": "NzU2MTgxMDkzODYyMDgwNjIz.X2OGhQ.NyBXuU9ZqhBST1dBYNrz3vKgqSQ",
+  "YOUTUBE_API_KEY": "AIzaSyDwoqyZFU5vHppE_ua5OWoaT6q30H-y4Zk",
+  "SOUNDCLOUD_CLIENT_ID": "159986570",
+  "MAX_PLAYLIST_SIZE": 10,
+  "PREFIX": ">",
+  "PRUNING": false
 }
