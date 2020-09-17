@@ -46,7 +46,7 @@ function is_url(str) {
 
 const usersMap = new Map();
 const LIMIT = 5; //How many messages it takes to mute /ms
-const TIME = 100 //How long they have to send 5 messages to mute /ms
+const TIME = 1000 //How long they have to send 5 messages to mute /ms
 const DIFF = 2500 //if they dont send a message for that much time it resets anyway /ms
 
 const roleid = "755813413074239620" // Put the role id here. This is the id the bot gives when user gets muted
