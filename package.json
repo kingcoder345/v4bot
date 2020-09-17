@@ -1,21 +1,23 @@
 {
-  "name": "mdo",
-  "version": "1.0.0",
-  "description": "e",
-  "main": "bot.js",
+  "name": "Evobot",
+  "version": "4.0.0",
+  "description": "Discord music bot built with discord.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
-    "discord-anti-spam": "^2.4.1",
+    "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.3.1",
-    "fs": "^0.0.2",
-    "fs-extra": "^9.0.1",
-    "quick.db": "^7.1.1",
-    "ms": "^2.1.2",
-    "config": "^3.3.1"
+    "ffmpeg-static": "^4.2.7",
+    "lyrics-finder": "^21.4.0",
+    "simple-youtube-api": "^5.2.1",
+    "soundcloud-downloader": "^0.1.6",
+    "string-progressbar": "^1.0.1",
+    "ytdl-core": "^3.2.2",
+    "ytdl-core-discord": "^1.2.1"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node bot.js"
-  },
-  "author": "",
-  "license": "ISC"
+    "start": "node index.js"
+  }
 }

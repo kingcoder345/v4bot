@@ -1,8 +1,8 @@
 const Discord = require('discord.js');
 const ms = require('ms');
 
-const { OwnerId, Tester } = require('../../config');
-const { Client } = require('../../index');
+const { OwnerId, Tester } = require('../config');
+const { Client } = require('../index');
 
 class EventsCalled
 {
