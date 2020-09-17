@@ -26,7 +26,7 @@ const db = require('quick.db');
         let warnings = db.get(`warnings_${message.guild.id}_${user.id}`);
 
 
-        if(warnings === 4) mem.ban() //How many warnings it takes to get banned or do mem.kick() to kick
+        if(warnings === 4) mem.kick(3) //How many warnings it takes to get banned or do mem.kick() to kick
 
 
         if(warnings === null) {

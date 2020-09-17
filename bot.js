@@ -45,8 +45,8 @@ function is_url(str) {
 /* ////////////////////////    Mute func   ////////////////////////////////////////// */
 
 const usersMap = new Map();
-const LIMIT = 1; //How many messages it takes to mute /ms
-const TIME = 500 //How long they have to send 5 messages to mute /ms
+const LIMIT = 5; //How many messages it takes to mute /ms
+const TIME = 100 //How long they have to send 5 messages to mute /ms
 const DIFF = 2500 //if they dont send a message for that much time it resets anyway /ms
 
 const roleid = "755813413074239620" // Put the role id here. This is the id the bot gives when user gets muted
@@ -54,15 +54,14 @@ const roleid = "755813413074239620" // Put the role id here. This is the id the 
 
 bot.on('message', message => {
     if(message.author.bot) return;
-/* Just a quick anti link module 
+ 
     if(is_url(message.content) === true) {
         message.delete()
-        return message.channel.send("You can not send link here :/")
+        return message.channel.send("You can not send links here sorry")
       }
 
       // This is optional, if wish to have anti links please delete line 57 and line 64
- End of Just a quick anti link module */
-
+ 
     if(usersMap.has(message.author.id)) {
         const userData = usersMap.get(message.author.id)
         const { lastMessage, timer } = userData
