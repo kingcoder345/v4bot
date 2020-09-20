@@ -1,22 +1,39 @@
-{
-  "name": "blyatbot",
+{ "name": "cryptex",
   "version": "1.0.0",
-  "description": "BlyatBot moderates your Discord",
+  "description": "Amazing litle fun  bot",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
-  "keywords": [
-    "blyat",
-    "bot"
-  ],
-  "author": "Tobias (@Tobinatore)",
+  "author": "gagi12",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^11.5.1",
-    "ffmpeg-binaries": "^3.2.2",
-    "googleapis": "^41.0.1",
-    "opusscript": "0.0.4",
-    "ytdl-core": "^0.18.1"
-  }
+    "array-sort": "^1.0.0",
+    "cleverbot.io": "^1.0.4",
+    "cpu-stat": "^2.0.1",
+    "discord.js": "^12.0.0",
+    "ffmpeg-binaries": "^4.0.0",
+    "figlet": "^1.2.0",
+    "google-images": "^2.1.0",
+    "math-expression-evaluator": "^1.2.17",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "ms": "^2.1.1",
+    "node-opus": "^0.3.0",
+    "node-superfetch": "^0.1.9",
+    "opusscript": "0.0.6",
+    "quick.hook": "^1.4.2",
+    "sql-summary": "^1.0.1",
+    "superagent": "^4.0.0-beta.5",
+    "table": "^5.0.2",
+    "ytdl-core": "^0.25.2",
+    "express": "^4.16.4",
+    "pretty-ms": "^7.0.0",
+    "quick.db": "^7.1.1",
+    "snekfetch": "^4.0.4"
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "devDependencies": {}
 }
