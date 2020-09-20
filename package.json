@@ -1,4 +1,5 @@
-{ "name": "cryptex",
+{
+  "name": "cryptex",
   "version": "1.0.0",
   "description": "Amazing litle fun  bot",
   "main": "index.js",
@@ -6,7 +7,7 @@
     "start": "node index.js"
   },
   "author": "gagi12",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "array-sort": "^1.0.0",
     "cleverbot.io": "^1.0.4",
