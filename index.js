@@ -4,7 +4,7 @@ const fs = require("fs");
 const express = require("express");
 const app = express();
 client.commands = new Discord.Collection();
-const config = require("./config.json");
+const env = require("./.env");
 let cdseconds = 5;
 
 function changing_status() {
@@ -26,11 +26,11 @@ client.on("ready", () => {
 
 client.on("message", message => {
   if (message.author.bot) return;
-  if (message.content.indexOf(config.prefix) !== 0) return;
+  if (message.content.indexOf(env.prefix) !== 0) return;
 
   // This is the best way to define args. Trust me.
   const args = message.content
-    .slice(config.prefix.length)
+    .slice(env.prefix.length)
     .trim()
     .split(/ +/g);
   const command = args.shift().toLowerCase();
@@ -44,7 +44,7 @@ client.on("message", message => {
   }
 });
 
-client.login(config.token);
+client.login(process.env.token);
 
 app.get("/", (req, res) => {
   res.sendStatus(200);
